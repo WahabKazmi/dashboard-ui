@@ -1,0 +1,249 @@
+/**
+ 
+ * @author Ashish Ali <aashish.karowalia@va8ivedigital.com>
+ */
+
+body {
+  background-color: body(background);
+  color: body(color);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--blackTextColor);
+}
+
+sub {
+  vertical-align: top;
+  font-size: smaller;
+}
+
+p a,
+p strong {
+  display: inline-block;
+  vertical-align: top;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+input,
+select,
+textarea,
+button {
+  vertical-align: top;
+  outline: none;
+  color: var(--blackTextColor);
+  font-size: 14px;
+
+  @include placeholder {
+    color: #c5c5c5;
+  }
+}
+
+input,
+select,
+textarea,
+button {
+  @include font();
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  @include transition(all 0.4s linear);
+}
+
+// Container
+.wrapper,
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+// Max Container
+.wrapper-fluid,
+.container-fluid {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+//grid
+[class*="grid"] {
+  display: grid;
+}
+
+// Flex
+[class*="flex"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Align perfect Center
+[class*="Vhc"] {
+  @include flex-center;
+}
+
+// Flex Direction Column
+[class*="Dc"] {
+  flex-direction: column;
+}
+
+// Flex row reverse
+[class*="Rv"] {
+  flex-direction: row-reverse;
+}
+
+.rowbar5 {
+  margin: 0 calc(-1 * var(--spacing5));
+}
+.rowbar10 {
+  margin: 0 calc(-1 * var(--spacing10));
+}
+.rowbar {
+  margin: 0 calc(-1 * var(--spacing));
+}
+
+.offset5 {
+  margin: calc(-1 * var(--spacing5));
+}
+.offset10 {
+  margin: calc(-1 * var(--spacing10));
+}
+.offset {
+  margin: calc(-1 * var(--spacing));
+}
+
+.section {
+  &:not(.no-padding) {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+  }
+  &.padding-bottom-none {
+    padding-bottom: 0;
+  }
+  &.padding-top-none {
+    padding-top: 0;
+  }
+}
+
+/* ================================================================
+      Global Class which are extended in projects 
+=================================================================== */
+
+// overlay CSS
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(128, 128, 128, 0.5);
+  //background-color: rgba($primaryColor, 0.45%);
+  display: none;
+}
+
+//global heading style styling
+.top-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: var(--primaryColor);
+  margin-bottom: 30px;
+  position: relative;
+
+  &.primary {
+    color: var(--primaryTextColor);
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    // text-align: left;
+  }
+}
+
+.sub-heading {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 30px;
+
+  &.left {
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+
+    &.center {
+      text-align: center;
+    }
+  }
+}
+
+//global heading wrapper with two elements eg: heading and link style styling
+.heading-wrapper {
+  margin-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .top-heading {
+    flex: 1;
+    margin-bottom: 0px;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 10px;
+  }
+}
+
+//view all button global styling
+.view-all-global {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--secondaryColor);
+  padding-top: 10px;
+
+  i {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  &:hover {
+    color: var(--primaryColor);
+
+    i {
+      color: var(--primaryColor);
+    }
+  }
+}

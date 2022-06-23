@@ -1,0 +1,25 @@
+{
+  "name": "discount-code-king",
+  "version": "2.0.0",
+  "description": "coupon services for discount ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashish Ali",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "audit": "0.0.6",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "7.1.0",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "sass": "^1.43.2"
+  }
+}

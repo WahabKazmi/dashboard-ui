@@ -1,0 +1,104 @@
+/* =======
+   Icomoon 
+   ======= */
+@import "../icons/variables";
+@import "../partials/theme";
+
+// -----------------------------------------/
+
+/* ===============
+   Default Setting 
+   =============== */
+$body: (
+  background: $primaryColor,
+  color: #000000,
+  line-height: 1,
+);
+$font-family: "Open Sans";
+$font-size: 14px;
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+);
+$font-family-pathname: to-lower-case($font-family);
+$border-radius: 5px;
+$total-grids: 12;
+$iconFont: "icomoon";
+
+//paths For fonts using in Files.
+$font-family-path: "../fonts";
+$icomoon-font-path: "../fonts";
+// $font-family-path: "https://cdn.supersavermama.com/fonts";
+// $icomoon-font-path: "https://cdn.supersavermama.com/fonts";
+
+$slick-font-path: "/build/fonts/";
+
+@function body($body-key) {
+  @return map-get($body, $body-key);
+}
+
+@function weights($font-weight) {
+  @return map-get($font-weights, $font-weight);
+}
+
+// -----------------------------------------/
+
+/* ======
+   Button
+   ====== */
+$btn-padding: 15px 40px;
+$btn-default-background: #f7f7f7;
+$btn-default-color: color(primaryColor);
+$btn-themes: (
+  pcolor:
+    linear-gradient(90deg, color(btn-gradient-light), color(btn-gradient-dark)),
+  scolor: color(btn-gradient-dark),
+);
+$btn-line-themes: (
+  pcolor: color(primaryColor),
+  scolor: white,
+);
+// $btn-color: color(primaryColor);
+$btn-default-linebox: (
+  width: 2px,
+  style: solid,
+  color: white,
+);
+$btn-radius: 50px;
+$btn-font-size: 18px;
+$btn-line-height: 20px;
+$btn-font-weight: 600;
+// -----------------------------------------/
+
+/* ==============
+   Default Border
+   ============== */
+$border: (
+  style: solid,
+  width: 2px,
+  color: #e6e6e6,
+);
+// -----------------------------------------/
+
+/* =======
+   Plugins
+   ======= 
+   * Slick Slider
+   * Custom Scroll Bar 
+   */
+// Slick Styling
+$slick-arrow-color: var(--primaryColor);
+$slick-dot-color: black;
+$slick-dot-color-active: var(--primaryColor);
+
+// jQuery Custom Scrollbar
+$customScrollbar: var(--primaryColor);
+$customScrollbarRail: rgba(black, 0.1);
+
+@import "_mixins";
+
+$base-viewport: 1920;
+$minimum-viewport: 375;

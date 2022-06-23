@@ -1,0 +1,35 @@
+@import "partials/settings";
+
+/* =========
+   Font Face
+   ========= */
+
+// Font Face
+// @each $fw_key,
+// $fw in $font-weights {
+//     @include font-face($font-family,
+//     "#{$font-family-path}/#{$font-family-pathname}-#{$fw_key}",
+//     #{$fw},
+//     normal,
+//     woff2);
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1vp206");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1vp206#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1vp206")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1vp206")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1vp206##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+// -----------------------------------------/

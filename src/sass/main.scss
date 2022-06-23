@@ -1,0 +1,28 @@
+@import "./partials/theme.scss";
+
+:root {
+  // Custom variable values only support SassScript inside `#{}`.
+  @each $color, $value in $secound-theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $color, $value in $social-colors {
+    --#{$color}: #{$value};
+  }
+
+  --spacing5: 5px;
+  --spacing10: 10px;
+  --spacing: 15px;
+  --gap: 15px;
+
+  @media (max-width: 768px) {
+    --gp: 10px;
+  }
+}
+
+//Styling "import" using globaly in for pages.
+
+@import "partials/import";
+
+// impliment css for icon page only
+@import "partials/_iconhtml";

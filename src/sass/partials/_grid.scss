@@ -1,0 +1,56 @@
+/**
+ * @author Ashish Ali <aashish.karowalia@va8ivedigital.com>
+ */
+
+@use "sass:math";
+
+@for $i from 1 through $total-grids {
+  $width: percentage(math.div(1, $i));
+
+  .grid-column-#{$i} {
+    display: grid;
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
+
+[class*="grid-column-"],
+[class^=" grid-column-"] {
+  grid-gap: 30px;
+
+  @media (max-width: 1440px) {
+    grid-gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    grid-gap: 10px;
+  }
+}
+
+.grid-column-2 {
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid-column-3 {
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 521px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid-column-4,
+.grid-column-5 {
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 521px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

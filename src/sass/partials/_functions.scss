@@ -1,0 +1,31 @@
+/**
+  * @author Syed Mohammed Hassan <mohammad.hassan@va8ivedigital.com>
+  * 
+  * This is a function that produces an auto-responsive clamp() calculation
+  * that morphs the size between the high and low ranges provided within
+  * the design/wireframe received.
+  *
+  * @param { number } $min
+  * @param { number } $max
+  * @param { string: 1px } $unit
+  * @param { number: $base-viewport } $max-viewport
+  * @param { number: $minimum-viewport } $min-viewport
+  */
+@function auto-clamp(
+  $min,
+  $max,
+  $unit: 1px,
+  $max-viewport: $base-viewport,
+  $min-viewport: $minimum-viewport
+) {
+  $max-size: calc(#{$max} * #{$unit});
+  $min-size: calc(#{$min} * #{$unit});
+
+  $preferred-size: calc(
+    #{$min-size} + (#{$max} - #{$min}) * ((
+            100vw - (#{$min-viewport} * #{$unit})
+          ) / (#{$max-viewport} - #{$min-viewport}))
+  );
+
+  @return clamp(#{$min-size}, #{$preferred-size}, #{$max-size});
+}
