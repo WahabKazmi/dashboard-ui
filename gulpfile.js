@@ -81,7 +81,7 @@ const tasks = () => (
   ]).on("change", bs.reload),
   // Browser Sync Initiate
   bs.init({
-    proxy: "http://localhost/ui-boilerplate",
+    proxy: "http://localhost/dashboard-ui",
   }),
   // Browser Sync Reload
   bs.reload({

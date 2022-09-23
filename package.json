@@ -1,5 +1,5 @@
 {
-  "name": "ui-boilerplate",
+  "name": "dashboard-ui",
   "version": "2.0.0",
   "description": "uses for start a ui project",
   "main": "gulpfile.js",
