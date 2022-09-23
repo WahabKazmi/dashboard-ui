@@ -1,8 +1,3 @@
-/**
- * @Author Abdul Wahab Kazmi abdul.wahab@va8ivedigital.com
- * This file has all the generic javascript functions which
- * can be reused in all over the site.
- */
 function scrollhandler() {
   element = document.querySelectorAll(
     "[data-srcset],[data-src], [data-bgimage]"

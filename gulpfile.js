@@ -72,16 +72,16 @@ const tasks = () => (
   watch("./src/fonts/*", copyFonts),
   watch("./src/images/*", imageMin),
   watch([
-    "./*.php",
-    "./*.php",
-    "./**/.php",
+    "./*.*",
+    "./*.*",
+    "./**/.*",
     "./src/sass/**/**/*.scss",
     "./src/sass/**/*.scss",
     "./src/sass/*.scss",
   ]).on("change", bs.reload),
   // Browser Sync Initiate
   bs.init({
-    proxy: "http://localhost/projects/frontend-boilerplate-2022/",
+    proxy: "http://localhost/ui-boilerplate",
   }),
   // Browser Sync Reload
   bs.reload({

@@ -1,8 +1,3 @@
-/**
- 
- * @author Ashish Ali <aashish.karowalia@va8ivedigital.com>
- */
-
 body {
   background-color: body(background);
   color: body(color);
@@ -46,7 +41,7 @@ button {
   color: var(--blackTextColor);
   font-size: 14px;
 
-  @include placeholder {
+  &::placeholder {
     color: #c5c5c5;
   }
 }

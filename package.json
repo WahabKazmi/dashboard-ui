@@ -1,12 +1,12 @@
 {
-  "name": "discount-code-king",
+  "name": "ui-boilerplate",
   "version": "2.0.0",
-  "description": "coupon services for discount ",
+  "description": "uses for start a ui project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ashish Ali",
+  "author": "Wahab Kazmi",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "*",
