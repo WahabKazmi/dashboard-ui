@@ -1,0 +1,38 @@
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: lighten($primaryColor, 3);
+  .page-title {
+    font-size: auto-clamp(16,20);
+    color: $whiteTextColor;
+    font-weight: 600;
+  }
+  .address {
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 20px;
+      li {
+        position: relative;
+        &:not(:last-child) {
+          &::after {
+            content: "\f105";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -15px;
+            font-family: FontAwesome;
+          }
+        }
+        a {
+          @include transition(.5s ease);
+          &:hover {
+            color: $whiteTextColor;
+          }
+        }
+      }
+    }
+  }
+}
