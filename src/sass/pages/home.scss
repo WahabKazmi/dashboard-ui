@@ -7,3 +7,41 @@
 @import "../components/header.scss";
 @import "../components/user.scss";
 @import "../components/breadcrumb.scss";
+
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  .card {
+    display: grid;
+    grid-gap: 20px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .middle {
+      .amount {
+        font-size: 24px;
+        font-weight: 600;
+        color: $whiteTextColor;
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        background-color: rgba(14,189,164,.5);
+        display: grid;
+        place-content: center;
+        color: $success;
+      }
+    }
+  }
+}
