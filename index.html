@@ -21,21 +21,103 @@
     <link rel="stylesheet" href="./build/css/main.css" />
     <link rel="stylesheet" href="./build/css/home.css" />
     <link
-      rel="preload"
-      as="style"
-      href="./build/css/fonts.css"
-      onload="this.rel='stylesheet'"
-      crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
 
   <body>
-    <main class="mainWrapper">
-      <div class="overlay"></div>
-      <header class="header"></header>
-      <h1 style="color: #fff">starting</h1>
-      <footer class="footer"></footer>
+    <main class="main">
+      <div class="sidebar-layout">
+        <!-- SIDEBAR START -->
+        <div class="sidebar">
+          <div class="logo-wrapper">
+            <a href="">
+              <figure>
+                <img
+                  src=""
+                  alt=""
+                  width="100"
+                  height="50"
+                  data-src="./build/images/placeholder.png"
+                  onerror="this.error=null; this.src='./build/images/placeholder.png'"
+                />
+              </figure>
+            </a>
+          </div>
+          <div class="lists-wrapper">
+            <div class="list">
+              <h2 class="list-title">MENU</h2>
+              <ul class="list-dropdown">
+                <li class="list-item" data-active-toggle>
+                  <div class="list-menu">
+                    <a href="javascript:;">
+                      <i class="fa fa-dashboard"></i>
+                      <span>Dashboards</span>
+                      <button type="button">
+                        <i class="fa fa-angle-right"></i>
+                      </button>
+                    </a>
+                    <ul>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item" data-active-toggle>
+                  <div class="list-menu">
+                    <a href="javascript:;">
+                      <i class="fa fa-mobile"></i>
+                      <span>Apps</span>
+                      <button type="button">
+                        <i class="fa fa-angle-right"></i>
+                      </button>
+                    </a>
+                    <ul>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item" data-active-toggle>
+                  <div class="list-menu">
+                    <a href="javascript:;">
+                      <i class="fa fa-podcast"></i>
+                      <span>Podcast</span>
+                      <button type="button">
+                        <i class="fa fa-angle-right"></i>
+                      </button>
+                    </a>
+                    <ul>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- SIDEBAR END -->
+
+        <!-- MAIN AREA START -->
+        <div class="main-area"></div>
+        <!-- MAIN AREA END -->
+      </div>
     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script async src="./build/js/all.js"></script>
   </body>
 </html>

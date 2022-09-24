@@ -1,6 +1,6 @@
 body {
-  background-color: body(background);
-  color: body(color);
+  background-color: var(--primaryColor);
+  color: var(--mutedTextColor);
   font-family: Open Sans, sans-serif;
   font-size: 14px;
 }
@@ -14,7 +14,7 @@ a {
   display: block;
   cursor: pointer;
   text-decoration: none;
-  color: var(--blackTextColor);
+  color: var(--mutedTextColor);
 }
 
 sub {

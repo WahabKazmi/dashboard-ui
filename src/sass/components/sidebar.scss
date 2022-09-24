@@ -1,0 +1,23 @@
+.sidebar-layout {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: $secondaryColor;
+  padding: auto-clamp(10,20);
+  .logo-wrapper {
+    a {
+      figure {
+        padding-bottom: 20px;
+        img {
+         display: block;
+         margin: auto;
+         object-fit: cover;
+         width: 100%; 
+        }
+      }
+    }
+  }
+}

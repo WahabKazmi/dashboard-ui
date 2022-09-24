@@ -75,3 +75,8 @@ if (sidebar) {
    */
   window.addEventListener("resize", handleResize);
 }
+
+
+$('[data-active-toggle]').click(function(){
+  $(this).toggleClass('active')
+})

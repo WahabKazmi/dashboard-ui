@@ -1,11 +1,12 @@
 //using these variables only for builten function of scss eg: lighten,darken,rgba in colors,
 
-$primaryColor: #000;
-$secondaryColor: #303030;
+$primaryColor: #1a1d21;
+$secondaryColor: #212529;
 $tertiaryColor: #dd7a2f;
 $primaryTextColor: #222222;
-$whiteTextColor: #ffffff;
+$whiteTextColor: #ced4da;
 $blackTextColor: #000000;
+$mutedTextColor: #878a99;
 $borderColor: #e0e0e0;
 
 // default colors starts never change//
@@ -23,6 +24,7 @@ $secound-theme-colors: map-merge(
     "tertiaryColor": $tertiaryColor,
     "primaryTextColor": $primaryTextColor,
     "whiteTextColor": $whiteTextColor,
+    "mutedTextColor": $mutedTextColor,
     "blackTextColor": $blackTextColor,
     "borderColor": $borderColor,
     "success": $success,

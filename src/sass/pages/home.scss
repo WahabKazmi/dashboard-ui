@@ -2,27 +2,5 @@
 
 //Styling "import" using globaly in for pages.
 @import "../partials/import";
-
-/* Remove this when start working */
-.welcome-boilerplate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  h1 {
-    color: $whiteTextColor;
-    font-size: auto-clamp(30, 50);
-    text-align: center;
-  }
-  p {
-    text-align: right;
-    color: $whiteTextColor;
-    a {
-      color: $whiteTextColor;
-      &:hover {
-        color: dodgerblue;
-      }
-    }
-  }
-}
-/*  */
+@import "../components/sidebar.scss";
+@import "../components/list.scss";
