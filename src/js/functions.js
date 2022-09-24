@@ -80,3 +80,12 @@ if (sidebar) {
 $('[data-active-toggle]').click(function(){
   $(this).toggleClass('active')
 })
+
+$('[search]').keydown(function() {
+  const dropdownClass = $(this).attr('data-target-dropdown')
+  if($(this).val().length > 0) {
+    $(`.${dropdownClass}`).css('display', 'block')
+  } else {
+    $(`.${dropdownClass}`).css('display', 'none')
+  }
+});

@@ -1,0 +1,24 @@
+@import "./search.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: lighten($secondaryColor, 4);
+  .col {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .hamburger {
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      color: $whiteTextColor;
+      font-size: 24px;
+    }
+  }
+}

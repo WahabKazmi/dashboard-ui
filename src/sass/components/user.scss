@@ -1,0 +1,22 @@
+.user {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: start;
+  .image-wrapper {
+    img {
+      border-radius: 50%;
+    }
+  }
+  .info {
+    .name {
+      font-size: 14px;
+      color: $whiteTextColor;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
